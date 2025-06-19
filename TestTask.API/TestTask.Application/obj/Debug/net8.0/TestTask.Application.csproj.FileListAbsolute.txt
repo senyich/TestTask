@@ -1,0 +1,15 @@
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/bin/Debug/net8.0/TestTask.Application.deps.json
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/bin/Debug/net8.0/TestTask.Application.dll
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/bin/Debug/net8.0/TestTask.Application.pdb
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/bin/Debug/net8.0/TestTask.DataAccess.dll
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/bin/Debug/net8.0/TestTask.DataAccess.pdb
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.csproj.AssemblyReference.cache
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.AssemblyInfoInputs.cache
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.AssemblyInfo.cs
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.csproj.CoreCompileInputs.cache
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.csproj.CopyComplete
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.dll
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/refint/TestTask.Application.dll
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/TestTask.Application.pdb
+/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/Debug/net8.0/ref/TestTask.Application.dll
