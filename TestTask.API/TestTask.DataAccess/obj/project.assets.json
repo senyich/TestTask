@@ -2939,11 +2939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
+      "projectUniqueName": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
       "projectName": "TestTask.DataAccess",
-      "projectPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
+      "projectPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
       "packagesPath": "/home/senyacm/.nuget/packages/",
-      "outputPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/obj/",
+      "outputPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/senyacm/.nuget/NuGet/NuGet.Config"

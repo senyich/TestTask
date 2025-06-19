@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V9kKksOZ9Lk=",
+  "dgSpecHash": "syHy+2qy0PA=",
   "success": true,
-  "projectFilePath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
+  "projectFilePath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
   "expectedPackageFiles": [
     "/home/senyacm/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/senyacm/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

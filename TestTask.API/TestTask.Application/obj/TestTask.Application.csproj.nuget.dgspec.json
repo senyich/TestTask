@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj": {}
+    "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj": {}
   },
   "projects": {
-    "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj": {
+    "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj",
+        "projectUniqueName": "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj",
         "projectName": "TestTask.Application",
-        "projectPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj",
+        "projectPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj",
         "packagesPath": "/home/senyacm/.nuget/packages/",
-        "outputPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/obj/",
+        "outputPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/senyacm/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj": {
-                "projectPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj"
+              "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj": {
+                "projectPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj": {
+    "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
+        "projectUniqueName": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
         "projectName": "TestTask.DataAccess",
-        "projectPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
+        "projectPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/TestTask.DataAccess.csproj",
         "packagesPath": "/home/senyacm/.nuget/packages/",
-        "outputPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.DataAccess/obj/",
+        "outputPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/senyacm/.nuget/NuGet/NuGet.Config"

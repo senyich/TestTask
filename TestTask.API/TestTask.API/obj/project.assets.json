@@ -3446,11 +3446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.API/TestTask.API.csproj",
+      "projectUniqueName": "/home/senyacm/github/TestTask/TestTask.API/TestTask.API/TestTask.API.csproj",
       "projectName": "TestTask.API",
-      "projectPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.API/TestTask.API.csproj",
+      "projectPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.API/TestTask.API.csproj",
       "packagesPath": "/home/senyacm/.nuget/packages/",
-      "outputPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.API/obj/",
+      "outputPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/senyacm/.nuget/NuGet/NuGet.Config"
@@ -3465,8 +3465,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj": {
-              "projectPath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj"
+            "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj": {
+              "projectPath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj"
             }
           }
         }

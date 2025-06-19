@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rjDEqx2q9es=",
+  "dgSpecHash": "Yo61UMwq5xg=",
   "success": true,
-  "projectFilePath": "/home/senyacm/github/TestTask/TestTaskBackend/TestTask.API/TestTask.Application/TestTask.Application.csproj",
+  "projectFilePath": "/home/senyacm/github/TestTask/TestTask.API/TestTask.Application/TestTask.Application.csproj",
   "expectedPackageFiles": [
     "/home/senyacm/.nuget/packages/microsoft.entityframeworkcore/9.0.1/microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
     "/home/senyacm/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.1/microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",
