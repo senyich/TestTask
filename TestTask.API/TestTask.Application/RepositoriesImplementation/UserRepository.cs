@@ -25,7 +25,6 @@ public class UserRepository : IUserRepository
         }
         finally{ _semaphore.Release(); }
     }
-
     public async Task UpdateAsync(User newEntity)
     {
         await _semaphore.WaitAsync();
@@ -47,9 +46,11 @@ public class UserRepository : IUserRepository
         await _semaphore.WaitAsync();
         try
         {
-            await _db.Users
+            var deletedRows = await _db.Users
                 .Where(u=>u.Id == id)
                 .ExecuteDeleteAsync();
+            if(deletedRows == 0)
+                throw new Exception($"Нет пользователя с таким id, ничего не удалено");
         }
         finally{ _semaphore.Release(); }
     }

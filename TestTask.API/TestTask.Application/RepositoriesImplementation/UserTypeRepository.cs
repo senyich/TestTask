@@ -44,9 +44,11 @@ public class UserTypeRepository : IUserTypeRepository
         await _semaphore.WaitAsync();
         try
         {
-            await _db.UserTypes
+            var deletedRows = await _db.UserTypes
                 .Where(u=>u.Id == id)
                 .ExecuteDeleteAsync();
+            if(deletedRows == 0)
+                throw new Exception($"Нет типа с таким id, ничего не удалено");
         }
         finally{ _semaphore.Release(); }
     }

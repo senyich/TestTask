@@ -32,7 +32,7 @@ public class UserTypeRepositoryValidationService : IUserTypeRepositoryValidation
         }
         catch (Exception ex)
         {
-            throw new Exception($"Ошибка при обновлении типа пользователя: {ex.Message}");
+            throw new Exception(ex.Message);
         }
     }
     public async Task DeleteTypeAsync(int id)
@@ -43,7 +43,7 @@ public class UserTypeRepositoryValidationService : IUserTypeRepositoryValidation
         }
         catch (Exception ex)
         {
-            throw new Exception($"Ошибка при удалении типа пользователя: {ex.Message}");
+            throw new Exception(ex.Message);
         }
     }
     public async Task<UserType> GetTypeByIdAsync(int id)

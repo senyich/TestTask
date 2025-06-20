@@ -47,7 +47,7 @@ export default function UserDetails() {
           </p>
           <p className="text-gray-700">
             <span className="font-semibold">Имя:</span> {user.name}
-          </p>
+          </p>ыфвывыфвыф
           <p className="text-gray-700">
             <span className="font-semibold">Тип:</span> {user.type}
           </p>

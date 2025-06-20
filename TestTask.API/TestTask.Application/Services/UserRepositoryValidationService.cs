@@ -33,7 +33,7 @@ public class UserRepositoryValidationService : IUserRepositoryValidationService
         }
         catch (Exception ex)
         {
-            throw new Exception($"Ошибка при обновлении пользователя: {ex.Message}");
+            throw new Exception(ex.Message);
         }
     }
 
@@ -45,7 +45,7 @@ public class UserRepositoryValidationService : IUserRepositoryValidationService
         }
         catch (Exception ex)
         {
-            throw new Exception($"Ошибка при удалении пользователя: {ex.Message}");
+            throw new Exception(ex.Message);
         }
     }
 
