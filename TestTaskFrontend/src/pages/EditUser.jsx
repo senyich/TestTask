@@ -10,45 +10,49 @@ export default function EditUser() {
   const [initialData, setInitialData] = useState({ name: '', type: '' });
 
   useEffect(() => {
-    async function fetchUser() {
-      try {
-        const response = await fetch(`http://localhost:5186/api/users/get-user/${id}`);
+    fetch(`http://localhost:5186/api/users/get-user/${id}`)
+      .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
+        return response.json();
+      })
+      .then((data) => {
         setInitialData({
           name: data.name,
-          type: data.type
+          type: data.type,
         });
-      } catch (error) {
+      })
+      .catch(() => {
         toast.error('Failed to fetch user data');
-      }
-    }
-    fetchUser();
+      });
   }, [id]);
-  const handleSubmit = async (formData) => {
-    try {
-      const params = new URLSearchParams({
-        Id: id,
-        Name: formData.name,
-        TypeId: formData.typeId
+
+  const handleSubmit = (formData) => {
+    const params = new URLSearchParams({
+      Id: id,
+      Name: formData.name,
+      TypeId: formData.typeId,
+    });
+
+    fetch(`http://localhost:5186/api/users/update-user?${params.toString()}`, {
+      method: 'PUT',
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Ошибка запроса, статус-код: ${response.status}`);
+        }
+        toast.success('Пользователь обновлен успешно');
+        navigate(`/users/${id}`);
+      })
+      .catch(() => {
+        toast.error('Ошибка обновления пользователя');
       });
-      const response = await fetch(`http://localhost:5186/api/users/update-user?${params.toString()}`, {
-        method: 'PUT'
-      });
-      if (!response.ok) {
-        throw new Error(`Ошибка запроса, статус-код: ${response.status}`);
-      }
-      toast.success('Пользователь обновлен успешно');
-      navigate(`/users/${id}`);
-    } catch (error) {
-      toast.error('Ошибка обновления пользователя');
-    }
   };
   return (
     <div>
       <h1 className="text-2xl font-bold text-teal-700 mb-6">Изменить пользователя</h1>
+      <RouteButton text={"Вернуться к списку"} path={"/users"} />
       <UserForm onSubmit={handleSubmit} initialData={initialData} buttonText="Update User" />
     </div>
   );

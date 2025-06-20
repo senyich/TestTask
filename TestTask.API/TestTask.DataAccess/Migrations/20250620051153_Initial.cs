@@ -51,8 +51,9 @@ namespace TestTask.DataAccess.Migrations
                 columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Admin" },
-                    { 2, "User" }
+                    { 1, "Администратор" },
+                    { 2, "Пользователь" },
+                    { 3, "Гость" }
                 });
 
             migrationBuilder.InsertData(
@@ -60,8 +61,11 @@ namespace TestTask.DataAccess.Migrations
                 columns: new[] { "Id", "Name", "TypeId" },
                 values: new object[,]
                 {
-                    { 1, "Alice", 1 },
-                    { 2, "Bob", 2 }
+                    { 1, "User1", 1 },
+                    { 2, "User2", 2 },
+                    { 3, "User3", 3 },
+                    { 4, "User4", 3 },
+                    { 5, "User5", 1 }
                 });
 
             migrationBuilder.CreateIndex(

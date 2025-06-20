@@ -11,7 +11,7 @@ using TestTask.DataAccess;
 namespace TestTask.DataAccess.Migrations
 {
     [DbContext(typeof(UsersContext))]
-    [Migration("20250619042632_Initial")]
+    [Migration("20250620051153_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -49,14 +49,32 @@ namespace TestTask.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Alice",
+                            Name = "User1",
                             TypeId = 1
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Bob",
+                            Name = "User2",
                             TypeId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "User3",
+                            TypeId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "User4",
+                            TypeId = 3
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "User5",
+                            TypeId = 1
                         });
                 });
 
@@ -80,12 +98,17 @@ namespace TestTask.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Admin"
+                            Name = "Администратор"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "User"
+                            Name = "Пользователь"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Гость"
                         });
                 });
 

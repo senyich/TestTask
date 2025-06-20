@@ -1,4 +1,4 @@
-// App.jsx
+import { ToastContainer } from 'react-toastify';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import UserDashboard from './pages/UserDashboard';
@@ -21,6 +21,15 @@ export default function App() {
             <Route path="/users/edit/:id" element={<EditUser />} />
           </Routes>
         </main>
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          closeOnClick={true}
+          pauseOnHover={true}
+          draggable={true}
+          theme="colored"
+        />
       </div>
     </Router>
   );

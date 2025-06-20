@@ -25,6 +25,7 @@ public static class ServiceExtension
     {
         services.AddScoped<IUserTypeRepositoryValidationService, UserTypeRepositoryValidationService>();
         services.AddScoped<IUserRepositoryValidationService, UserRepositoryValidationService>();
+        services.AddScoped<IExcelExportService, ExcelExportService>();
         return services;
     }
 

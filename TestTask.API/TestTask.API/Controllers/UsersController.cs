@@ -13,14 +13,17 @@ namespace TestTask.API.Controllers;
 [Route("api/users")]
 public class UsersController : Controller
 {
+    private IExcelExportService _excelExportService;
     private IUserRepositoryValidationService _userDbValidator;
     private IUserMapper _userMapper;
     public UsersController(
         IUserRepositoryValidationService userDbValidator, 
-        IUserMapper userMapper)
+        IUserMapper userMapper,
+        IExcelExportService excelExportService)
     {
         _userDbValidator = userDbValidator;
         _userMapper = userMapper;
+        _excelExportService = excelExportService;
     }
     [HttpGet]
     [Route("get-user/{id}")]
@@ -74,6 +77,23 @@ public class UsersController : Controller
             var entity = _userMapper.MapToEntity(userRequest);
             var id = await _userDbValidator.AddUserAsync(entity);
             return Ok(new AddUserResponceDto { Id = id });
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    [HttpGet]
+    [Route("export-users")]
+    public async Task<ActionResult> ExportUsersAsync()
+    {
+        try
+        {
+            var users = await _userDbValidator.GetUsersAsync();
+            var excelBytes = _excelExportService.ExportUsersToExcel(users.Select(u=>_userMapper.Map(u)).ToList());
+            return File(excelBytes, 
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", 
+                "Users.xlsx");
         }
         catch (Exception e)
         {

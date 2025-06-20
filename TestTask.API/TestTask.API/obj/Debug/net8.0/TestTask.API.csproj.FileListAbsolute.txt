@@ -277,3 +277,11 @@
 /home/senyacm/github/TestTask/TestTask.API/TestTask.API/obj/Debug/net8.0/TestTask.API.pdb
 /home/senyacm/github/TestTask/TestTask.API/TestTask.API/obj/Debug/net8.0/TestTask.API.genruntimeconfig.cache
 /home/senyacm/github/TestTask/TestTask.API/TestTask.API/obj/Debug/net8.0/ref/TestTask.API.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/ClosedXML.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/ClosedXML.Parser.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/ExcelNumberFormat.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/RBush.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/SixLabors.Fonts.dll
+/home/senyacm/github/TestTask/TestTask.API/TestTask.API/bin/Debug/net8.0/System.IO.Packaging.dll

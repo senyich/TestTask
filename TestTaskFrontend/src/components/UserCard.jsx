@@ -1,6 +1,34 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 
-export default function UserCard({ user }){
+export default function UserCard({ user, onDelete }) {
+  const [deleting, setDeleting] = useState(false);
+
+  const handleDelete = () => {
+    if (!window.confirm(`Вы уверены, что хотите удалить пользователя ${user.name}?`)) return;
+    setDeleting(true);
+    fetch(`http://localhost:5186/api/users/delete-user?id=${user.id}`, {
+      method: 'DELETE',
+      headers: {
+        accept: '*/*',
+      },
+    })
+      .then((res) => {
+        setDeleting(false);
+        if (!res.ok) {
+          throw new Error(`Ошибка удаления: ${res.status}`);
+        }
+        if (onDelete) 
+          onDelete(user.id);
+        toast.success('Пользователь успешно удалён');
+      })
+      .catch((err) => {
+        setDeleting(false);
+        toast.error(`Не удалось удалить пользователя: ${err.message}`);
+      });
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="p-6">
@@ -28,8 +56,15 @@ export default function UserCard({ user }){
           >
             Редактировать
           </Link>
+          <button
+            onClick={handleDelete}
+            disabled={deleting}
+            className="px-3 py-1 bg-red-600 text-white rounded-md text-sm font-medium hover:bg-red-700 transition-colors duration-200 disabled:opacity-50"
+          >
+            {deleting ? 'Удаление...' : 'Удалить пользователя'}
+          </button>
         </div>
       </div>
     </div>
   );
-};
+}
