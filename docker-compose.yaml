@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./TestTaskFrontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    environment:
+      - NODE_ENV=production
+
+  api:
+    build:
+      context: ./TestTask.API
+      dockerfile: Dockerfile
+    environment:
+      - ConnectionStrings__TestTaskDB=Host=db;Port=5432;Database=task-base;Username=postgres;Password=senyacm121;Pooling=true
+      - ASPNETCORE_ENVIRONMENT=Production
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: senyacm121
+      POSTGRES_DB: task-base
+      POSTGRES_USER: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d task-base"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

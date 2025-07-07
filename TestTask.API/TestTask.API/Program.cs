@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using TestTask.Application;
+using TestTask.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,5 +31,11 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<UsersContext>();
+    dbContext.Database.Migrate();
+}
 
 app.Run();
